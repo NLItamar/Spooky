@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Itamar.unity
+=======
+- path: Assets/Scenes/Daniel.unity
+>>>>>>> e8f40782fa5aa1598dc2d35fccb3a6560e887801
   isLoaded: 1
   isActive: 1
