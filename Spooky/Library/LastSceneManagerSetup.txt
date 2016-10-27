@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
 - path: Assets/Marc/Scenes/Marc.unity
-=======
-- path: Assets/Scenes/Itamar.unity
->>>>>>> d5666ded39d2fd57b8fa9ae0de711c08bb2f28ac
   isLoaded: 1
   isActive: 1

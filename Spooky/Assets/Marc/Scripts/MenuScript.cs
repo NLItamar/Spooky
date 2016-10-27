@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour {
     public Canvas QuitMenu;
     public Button Play;
     public Button Controls;
+    public Button Credits;
     public Button Exit;
 
 	void Start ()
@@ -15,6 +16,7 @@ public class MenuScript : MonoBehaviour {
         QuitMenu.GetComponent<Canvas>();
         Play.GetComponent<Button>();
         Controls.GetComponent<Button>();
+        Credits.GetComponent<Button>();
         Exit.GetComponent<Button>();
         QuitMenu.enabled = false;
     }
@@ -29,6 +31,7 @@ public class MenuScript : MonoBehaviour {
         QuitMenu.enabled = true;
         Play.enabled = false;
         Controls.enabled = false;
+        Credits.enabled = false;
         Exit.enabled = false;
     }
 
@@ -37,6 +40,7 @@ public class MenuScript : MonoBehaviour {
         QuitMenu.enabled = false;
         Play.enabled = true;
         Controls.enabled = true;
+        Credits.enabled = true;
         Exit.enabled = true;
     }
 
