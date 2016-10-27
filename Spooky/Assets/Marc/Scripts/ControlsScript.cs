@@ -5,13 +5,6 @@ using UnityEngine.UI;
 
 public class ControlsScript : MonoBehaviour {
 
-    public Button back;
-
-    void Start ()
-    {
-        back.GetComponent<Button>();
-	}
-	
 	// Update is called once per frame
 	void Update () {
 	
