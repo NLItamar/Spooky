@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Itamar.unity
+- path: Assets/Scenes/Daniel.unity
   isLoaded: 1
   isActive: 1
