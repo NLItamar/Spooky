@@ -89,7 +89,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1000012259106584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.072597, y: 2.044865e-17, z: 2.4014854}
+  m_LocalPosition: {x: -2.322804, y: -4.956144e-17, z: 0.83457714}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
@@ -297,7 +297,6 @@ MonoBehaviour:
   interactionTriggerDistance: 0
   activated: 0
   item: 
-  window: {fileID: 0}
   interactiontimer: 0
   interactionTime: 1
   audio: {fileID: 82000010585389676}
