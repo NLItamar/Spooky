@@ -1,8 +1,0 @@
-sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Marc/Scenes/Marc.unity
-=======
-- path: Assets/CurrentBuild/Scenes/Level1.unity
->>>>>>> master
-  isLoaded: 1
-  isActive: 1

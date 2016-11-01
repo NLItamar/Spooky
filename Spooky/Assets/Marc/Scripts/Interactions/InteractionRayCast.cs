@@ -7,13 +7,18 @@ public class InteractionRayCast : MonoBehaviour {
     public int interactionTriggerDistance;
     public bool activated;
     public string item;
-    public float interactiontimer;
+    public GameObject window;
+    public float interactiontimer, interactionTime = 1;
+
+    public AudioSource audio;
+    public AudioClip clipToilet, clipWindow;
+
 	// Use this for initialization
 	void Start ()
     {
         activated = false;
         interactionTriggerDistance = 2;
-        interactiontimer = 1;
+        interactiontimer = interactionTime;
 
     }
 	
@@ -28,19 +33,20 @@ public class InteractionRayCast : MonoBehaviour {
         if(Physics.Raycast(transform.position, forward, out hit))
         {
             //Debug.Log(hit.collider.gameObject.name);
-            if (hit.transform.tag == "Interaction" && hit.distance <= interactionTriggerDistance && Input.GetMouseButtonDown(0))
+            if (hit.transform.tag == "Interaction" && hit.distance <= interactionTriggerDistance && Input.GetMouseButtonDown(0) && !activated)
             {
-                Debug.Log("oi shit boi collision");
                 activated = true;
                 item = hit.collider.gameObject.name;
                 
             }
         }
 
+        InteractionTimer();
+        HandleInteraction();
         
     }
 
-    void handleInteraction()
+    void InteractionTimer()
     {
         if (activated)
         {
@@ -49,7 +55,24 @@ public class InteractionRayCast : MonoBehaviour {
         if(interactiontimer <= 0)
         {
             activated = false;
+            interactiontimer = interactionTime;
         }
     }
 
+    private void HandleInteraction()
+    {   
+        switch(item)
+        {
+            case "Toilet":
+                audio.PlayOneShot(clipToilet);
+                break;
+
+            case "Window":
+                audio.PlayOneShot(clipToilet);
+                
+                break;
+        }
+
+        item = null;
+    }
 }
