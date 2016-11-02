@@ -8,6 +8,16 @@ TagManager:
   - LobbyWP
   - Ghost
   - Interaction
+  - DiningRoomWP
+  - LivingRoomWP
+  - ToiletWP
+  - 1fHallWP
+  - MasterBedroomWP
+  - OfficeWP
+  - SouthBedroomWP
+  - NorthBedroomWP
+  - BathroomWP
+  - Resident
   layers:
   - Default
   - TransparentFX
