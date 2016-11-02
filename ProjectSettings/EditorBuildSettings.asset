@@ -11,3 +11,7 @@ EditorBuildSettings:
     path: Assets/Marc/Scenes/Credits.unity
   - enabled: 1
     path: Assets/Marc/Scenes/Controls.unity
+  - enabled: 1
+    path: Assets/CurrentBuild/Scenes/Level1.unity
+  - enabled: 1
+    path: Assets/CurrentBuild/Scenes/GameOver.unity

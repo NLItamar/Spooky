@@ -26,13 +26,9 @@ public class Button : MonoBehaviour {
     public void Click()
     {
         if (gameObject.name == "Retry Text") {
-            Application.LoadLevel("Tim");
+            Application.LoadLevel("Level1");
         }
         else if (gameObject.name == "Exit Text") {
-            Application.LoadLevel("Marc");
-        }
-        else if (gameObject.name == "Next Level Text")
-        {
             Application.LoadLevel("Marc");
         }
         else if (gameObject.name == "Main Menu Text")
