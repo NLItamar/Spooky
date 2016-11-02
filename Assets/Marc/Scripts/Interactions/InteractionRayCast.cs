@@ -7,8 +7,8 @@ public class InteractionRayCast : MonoBehaviour {
     public int interactionTriggerDistance;
     public bool activated;
     public string item;
-    public GameObject window;
     public float interactiontimer, interactionTime = 1;
+    private GameObject itemObj;
 
     public AudioSource audio;
     public AudioClip clipToilet, clipWindow;
@@ -37,7 +37,7 @@ public class InteractionRayCast : MonoBehaviour {
             {
                 activated = true;
                 item = hit.collider.gameObject.name;
-                
+                itemObj = hit.collider.gameObject;
             }
         }
 
@@ -68,8 +68,8 @@ public class InteractionRayCast : MonoBehaviour {
                 break;
 
             case "Window":
-                audio.PlayOneShot(clipToilet);
-                
+                Debug.Log(itemObj.transform.parent);
+                StartCoroutine(itemObj.transform.parent.GetComponent<WindowAction>().timer());
                 break;
         }
 
